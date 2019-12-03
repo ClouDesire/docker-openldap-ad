@@ -1,4 +1,5 @@
 # docker-openldap-ad
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 A docker image to run openldap that mimics AD  
 
 ## How to
