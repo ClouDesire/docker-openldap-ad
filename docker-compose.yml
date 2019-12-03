@@ -1,0 +1,18 @@
+version: '3.3'
+
+services:
+  openldap:
+    container_name: openldap
+    build: ./openldap
+    ports:
+      - '389:389'
+  phpldapadmin:
+    image: osixia/phpldapadmin:latest
+    container_name: phpldapadmin
+    environment:
+      PHPLDAPADMIN_LDAP_HOSTS: "openldap"
+      PHPLDAPADMIN_HTTPS: "false"
+    depends_on:
+      - openldap
+    ports:
+      - "8080:80"
