@@ -62,6 +62,6 @@ objectClass (  2.16.840.1.113730.3.2.20002
   DESC 'OpenLDAP Person'
   SUP  inetOrgPerson
   MUST ( userPrincipalName $ sAMAccountName $ name )
-  MAY ( CannotChangePassword $ PasswordNeverExpires $ ChangePasswordAtLogon $ Enabled $ UserAccountControl $ unicodePwd $ comment )
+  MAY ( CannotChangePassword $ PasswordNeverExpires $ ChangePasswordAtLogon $ Enabled $ UserAccountControl $ unicodePwd $ pwdLastSet $ comment )
   )
 
